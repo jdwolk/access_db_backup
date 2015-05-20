@@ -21,9 +21,9 @@ class Archiver < Struct.new(:dest_dir, :src_file)
 end
 
 # TODO: Dummy hardcoded paths - change in real usage
-dest_dir = '/path/to/DB/Archive'
-backend_file = '/path/to/DB_be.accdb'
-frontend_file = '/path/to/DB_fe.accdb'
+dest_dir = '/path/to/dest/dir'
+backend_file = '/path/to/db_be.accdb'
+frontend_file = '/path/to/db_fe.accdb'
 
 be_archiver = Archiver.new(dest_dir, backend_file)
 fe_archiver = Archiver.new(dest_dir, frontend_file)
